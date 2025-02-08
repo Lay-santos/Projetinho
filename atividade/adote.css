@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do botão */
+.container-titulo button {
+    background-color: #005a3e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container-titulo button:hover {
+    background-color: #003b2d;
+}
+
+.container-titulo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo do header */
+header {
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+/* Estilos para o container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;  /* Adiciona espaço entre os cards */
+}
+
+/* Estilo dos cards */
+.card {
+    width: 100%; /* Cards ocupam toda a largura disponível */
+    max-width: 600px; /* Tamanho máximo de 600px */
+    height: 400px;  /* Mantém a altura fixa */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;  /* Imagem com altura fixa */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Permite expansão do conteúdo */
+}
+
+.card-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* Animação fadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Centralização das divs de texto */
+.public {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Estilos para as divs de texto com animação */
+.text1,
+.text2,
+.text3 {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    background-color: #139c7193;
+    color: white;
+    width: 70%;
+    border-radius: 5px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+}
+
+.text1 {
+    animation-delay: 0.5s;
+}
+
+.text2 {
+    animation-delay: 1.5s;
+}
+
+.text3 {
+    animation-delay: 2.5s;
+}
+
+/* Estilos de fontes */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #0f0c0c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Título principal (titulo1) */
+.titulo h1 {
+    text-align: center;
+    color: #005a3e;
+    font-size: 32px;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 7%; /* Ajuste proporcional */
+}
+
+footer p {
+    color: #f4f7fa;
+    margin: 0; /* Remove margens extras */
+}

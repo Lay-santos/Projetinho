@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh; /* Permite expansão conforme o conteúdo */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+.menu {
+    text-align: end;
+    height: 800px;
+    background-image: url(./imagem/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 2px 1px rgba(114, 109, 109, 0.384);
+}
+
+/* Centraliza o menu */
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.menu ul li a {
+    background-color: black;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(40, 179, 61);
+    border-radius: 5px;
+}
+
+/* Container dos cards - sobrepondo a imagem de fundo */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar a linha quando necessário */
+    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    top: 95%; /* Mantém os cards um pouco sobrepostos à imagem de fundo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+/* Espaço extra para leitura */
+.spacer {
+    height: 150px; /* Mantém espaço entre os cards e o footer */
+}
+
+/* Cards com tamanho fixo e alinhados */
+.card {
+    background-color: rgb(239, 240, 237);
+    border-radius: 15px;
+    width: 300px; /* Mantém tamanho fixo do card */
+    height: auto; /* Permite que o card se expanda conforme o conteúdo */
+    min-height: 300px; /* Altura mínima para evitar encolhimento */
+    box-shadow: 5px 5px 2px 1px rgba(122, 113, 113, 0.767);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0; /* Impede que os cards diminuam de tamanho */
+    padding: 20px;
+}
+
+/* Imagens dos cards SEMPRE do mesmo tamanho */
+.card img {
+    width: 180px; /* Tamanho fixo */
+    height: 180px; /* Tamanho fixo */
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    object-fit: cover; /* Garante que a imagem preencha sem deformar */
+}
+
+/* Conteúdo do card agora visível */
+.card-content {
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer fixo com espaço para leitura */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 7%;
+}
+
+footer p {
+    color: #f4f7fa;
+    margin: 0;
+}
