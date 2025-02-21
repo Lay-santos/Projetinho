@@ -6,8 +6,8 @@
 
 html, body {
     width: 100%;
-    min-height: 100vh; /* Permite expansão conforme o conteúdo */
-    overflow-x: hidden; /* Evita rolagem horizontal */
+    min-height: 100vh; 
+    overflow-x: hidden; 
 }
 
 .menu {
@@ -20,7 +20,7 @@ html, body {
     box-shadow: 5px 5px 2px 1px rgba(114, 109, 109, 0.384);
 }
 
-/* Centraliza o menu */
+
 .menu ul {
     list-style-type: none;
 }
@@ -44,58 +44,54 @@ html, body {
     border-radius: 5px;
 }
 
-/* Container dos cards - sobrepondo a imagem de fundo */
 .container {
     padding: 20px;
     display: flex;
-    flex-wrap: wrap; /* Permite quebrar a linha quando necessário */
+    flex-wrap: wrap; 
     gap: 20px;
     justify-content: center;
     position: absolute;
-    top: 95%; /* Mantém os cards um pouco sobrepostos à imagem de fundo */
+    top: 95%; 
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
 }
 
-/* Espaço extra para leitura */
 .spacer {
-    height: 150px; /* Mantém espaço entre os cards e o footer */
+    height: 150px;
 }
 
-/* Cards com tamanho fixo e alinhados */
+
 .card {
     background-color: rgb(239, 240, 237);
     border-radius: 15px;
-    width: 300px; /* Mantém tamanho fixo do card */
-    height: auto; /* Permite que o card se expanda conforme o conteúdo */
-    min-height: 300px; /* Altura mínima para evitar encolhimento */
+    width: 300px; 
+    height: auto;
+    min-height: 300px; 
     box-shadow: 5px 5px 2px 1px rgba(122, 113, 113, 0.767);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    flex-shrink: 0; /* Impede que os cards diminuam de tamanho */
+    flex-shrink: 0; 
     padding: 20px;
 }
 
-/* Imagens dos cards SEMPRE do mesmo tamanho */
 .card img {
-    width: 180px; /* Tamanho fixo */
-    height: 180px; /* Tamanho fixo */
+    width: 180px; 
+    height: 180px; 
     display: block;
     margin: 0 auto;
     padding: 10px;
     border-radius: 20px;
-    object-fit: cover; /* Garante que a imagem preencha sem deformar */
+    object-fit: cover; 
 }
 
-/* Conteúdo do card agora visível */
 .card-content {
     text-align: center;
     padding: 10px;
-    flex-grow: 1; /* Faz o conteúdo ocupar o espaço necessário */
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,7 +101,7 @@ html, body {
     transform: scale(1.05);
 }
 
-/* Footer fixo com espaço para leitura */
+
 footer {
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* Estilo do botão */
+
 .container-titulo button {
     background-color: #005a3e;
     color: white;
@@ -24,13 +24,13 @@
     color: white;
 }
 
-/* Estilo do header */
+
 header {
     background-color: #000000;
     padding: 10px 0;
 }
 
-/* Estilos para o container principal */
+
 .container {
     display: flex;
     justify-content: center;
@@ -38,14 +38,14 @@ header {
     flex-direction: column;
     padding: 20px;
     width: 100%;
-    gap: 20px;  /* Adiciona espaço entre os cards */
+    gap: 20px;  
 }
 
-/* Estilo dos cards */
+
 .card {
-    width: 100%; /* Cards ocupam toda a largura disponível */
-    max-width: 600px; /* Tamanho máximo de 600px */
-    height: 400px;  /* Mantém a altura fixa */
+    width: 100%; 
+    max-width: 600px; 
+    height: 400px;  
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -62,14 +62,14 @@ header {
 
 .card img {
     width: 100%;
-    height: 300px;  /* Imagem com altura fixa */
+    height: 300px;  
     object-fit: cover;
 }
 
 .card-content {
     padding: 20px;
     text-align: center;
-    flex-grow: 1; /* Permite expansão do conteúdo */
+    flex-grow: 1; 
 }
 
 .card-content h1 {
@@ -84,7 +84,7 @@ header {
     margin-bottom: 0;
 }
 
-/* Animação fadeIn */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -97,7 +97,7 @@ header {
     }
 }
 
-/* Centralização das divs de texto */
+
 .public {
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@ header {
     gap: 20px;
 }
 
-/* Estilos para as divs de texto com animação */
+
 .text1,
 .text2,
 .text3 {
@@ -137,7 +137,7 @@ header {
     animation-delay: 2.5s;
 }
 
-/* Estilos de fontes */
+
 h1 {
     font-size: 24px;
     color: #333;
@@ -149,7 +149,6 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Título principal (titulo1) */
 .titulo h1 {
     text-align: center;
     color: #005a3e;
@@ -160,18 +159,18 @@ p {
 
 footer {
     display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
     background-color: #000000;
     color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 7%; /* Ajuste proporcional */
+    height: 7%; 
 }
 
 footer p {
     color: #f4f7fa;
-    margin: 0; /* Remove margens extras */
+    margin: 0;
 }
